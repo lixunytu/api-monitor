@@ -1,11 +1,11 @@
 # ApiMonitor
 
-## 采用GJSON方案，详情参考 https://github.com/tidwall/gjson
-## 针对使用频率比较高的规则，设置了8种快捷方式
+## 1.采用GJSON方案，详情参考 https://github.com/tidwall/gjson
+## 2.针对使用频率比较高的规则，设置了8种快捷方式
 
 ![avatar](./img/img.png)
 
-### 示例接口返回数据
+### 2.1 示例接口返回数据
 ```azure![img.png](img.png)
 {
 "name": {"first": "Tom", "last": "Anderson"},
@@ -32,3 +32,10 @@
 | include 包含	 | 判断键值数组包含预期值 | 第一个文本框填写想要判断的键值，必须为数组。<br><br>eg：<br>friends.#.status – 取friends所有元素中status键值的值<br><br>第二个文本框填写需要包含值，支持简单数据类型，number、string、boolean。<br>1 - 只要一个元素值为1即可 |
 | gt 大于	 | 判断键值大于预期值 | 第一个文本框填写想要判断的键值，支持获取多级键值。<br><br>eg：<br>age  – 取age的值<br>friends.#.status – 取friends所有元素中status键值的值<br><br>第二个文本框填写大于的值，必须为nunber。<br>0 - 值大于0 |
 | lt 小于	| 判断键值小于预期值 | 第一个文本框填写想要判断的键值，支持获取多级键值。<br><br>eg：<br>age  – 取age的值<br>friends.#.status – 取friends所有元素中status键值的值<br><br>第二个文本框填写小于的值，必须为nunber。<br>20 - 值小于20 |
+
+### 2.3 报警使用说明
+
+#### 支持多种报警方式包括 电话、短信、邮件、钉钉，支持回调，可以自定义报警方式，电话报警和短信报警需要付费，开源版本暂不展示
+
+### 联系我
+#### 目前还在迭代开发中，有兴趣可以联系微信：prejudiceandpride6
