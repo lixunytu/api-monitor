@@ -69,9 +69,9 @@
           type="primary"
           target="_blank"
           :underline="false"
-          href="http://team.yeshen.com/pages/viewpage.action?pageId=37492517"
+          href="https://github.com/lixunytu/api-monitor"
         >
-          http://team.yeshen.com/pages/viewpage.action?pageId=37492517
+          https://github.com/lixunytu/api-monitor
         </el-link>
       </p>
     </div>
