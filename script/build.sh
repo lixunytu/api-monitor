@@ -1,0 +1,1 @@
+CGO_ENABLED=1  GOARCH=amd64  CC=/usr/local/bin/x86_64-linux-musl-gcc  CXX=/usr/local/bin/x86_64-linux-musl-g++ GOOS=linux go build main.go
